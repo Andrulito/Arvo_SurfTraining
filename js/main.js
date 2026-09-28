@@ -3,7 +3,7 @@
    Formato internacional sin "+", espacios ni guiones.
    Ej. Argentina, Mar del Plata: 549223XXXXXXX
    ========================================================= */
-const WHATSAPP_NUMBER = "5492230000000";
+const WHATSAPP_NUMBER = "5492234386243";
 const WHATSAPP_MESSAGE = "¡Hola Arvo! Quiero info sobre los entrenamientos de surf 🏄";
 
 // Todos los botones con .js-whatsapp abren el chat
