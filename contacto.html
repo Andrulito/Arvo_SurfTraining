@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Arvo Surf Training</title>
+  <meta name="description" content="Contactá a Arvo Surf Training por WhatsApp o Instagram. Clases de surf y surf trips desde Mar del Plata.">
+  <meta name="theme-color" content="#222221">
+  <link rel="icon" href="assets/arvo-wordmark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Arvo Surf Training - Inicio">
+        <img src="assets/arvo-wordmark.svg" alt="" class="logo__mark">
+        <span class="logo__sub">Surf Training</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="viajes.html" class="nav__link">Viajes</a></li>
+          <li><a href="team.html" class="nav__link">Team</a></li>
+          <li><a href="surf-training.html" class="nav__link">Surf Training</a></li>
+          <li><a href="contacto.html" class="nav__link is-active" aria-current="page">Contacto</a></li>
+        </ul>
+        <a href="#" class="btn btn--lime nav__cta js-whatsapp">Reservá tu clase</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <img class="page-hero__bg" src="assets/web/img-p23-104.jpg" alt="" style="object-position:center 50%">
+      <div class="container page-hero__content">
+        <p class="hand">¿Hablamos?</p>
+        <h1 class="page-hero__title">Hablemos<br><span class="tag-lime">de surf</span></h1>
+        <p class="page-hero__lead">Contanos tu nivel y qué querés mejorar. Te respondemos por WhatsApp para coordinar tu próxima sesión o viaje.</p>
+      </div>
+    </section>
+
+    <section class="section texture-light">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--dark">Escribinos</p>
+          <h2 class="title title--dark">Estamos<br>en el <span class="tag-dark">agua</span></h2>
+          <div class="contact-cards">
+            <a href="#" class="contact-card js-whatsapp">
+              <span class="contact-card__icon"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+              <span><small>WhatsApp</small><strong>Escribinos un mensaje</strong></span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-card__icon"><svg aria-hidden="true"><use href="#i-instagram"/></svg></span>
+              <span><small>Instagram</small><strong>Seguinos</strong></span>
+            </a>
+            <div class="contact-card">
+              <span class="contact-card__icon"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span><small>Base</small><strong>Mar del Plata, Argentina</strong></span>
+            </div>
+          </div>
+          <div class="map">
+            <iframe title="Mapa de Mar del Plata" src="https://maps.google.com/maps?q=Mar%20del%20Plata&z=11&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contact-form">
+          <h2>Mandanos tu consulta</h2>
+          <p>Completá los datos y se abre WhatsApp con el mensaje listo para enviar.</p>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="interes">Me interesa</label>
+              <select id="interes" name="interes">
+                <option>Entrenamiento personalizado</option>
+                <option>Video análisis</option>
+                <option>Surf trip Praia do Rosa</option>
+                <option>Otros viajes</option>
+                <option>Arvo Talks</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="nivel">Mi nivel</label>
+              <select id="nivel" name="nivel">
+                <option>Inicial</option>
+                <option>Intermedio</option>
+                <option>Avanzado</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos qué querés mejorar"></textarea>
+          </div>
+          <button type="submit" class="btn btn--lime btn--lg">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Enviar por WhatsApp
+          </button>
+          <p class="form__hint">Te respondemos lo antes posible.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer texture-dark">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/arvo-wordmark.svg" alt="Arvo" class="footer__logo">
+        <p class="footer__lockup">Surf Training</p>
+        <p class="footer__by">x Lucas Santamaría</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <p class="footer__title">Navegá</p>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="viajes.html">Viajes</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="surf-training.html">Surf Training</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer__title">Contacto</p>
+        <ul>
+          <li><a href="#" class="js-whatsapp">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li>Mar del Plata, Argentina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Arvo Surf Training. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a href="#" class="wa-float js-whatsapp" aria-label="Chatear por WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float__label">¿Hablamos?</span>
+  </a>
+
+  <!-- Iconos -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44a9.4 9.4 0 0 1 9.44 9.45c0 5.2-4.24 9.43-9.46 9.43zm8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.06c0 2 .52 3.96 1.52 5.68L.58 23.7l6.1-1.6a11.3 11.3 0 0 0 5.37 1.37h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.34-8.04z"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" d="M7 2.5h10A4.5 4.5 0 0 1 21.5 7v10a4.5 4.5 0 0 1-4.5 4.5H7A4.5 4.5 0 0 1 2.5 17V7A4.5 4.5 0 0 1 7 2.5zM12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4zM17.6 6.4h.01"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21.5s-7-6.1-7-11.8a7 7 0 0 1 14 0c0 5.7-7 11.8-7 11.8zM12 12.4a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4z"/>
+    </symbol>
+  </svg>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -4,8 +4,8 @@
     {
       "name": "arvo-web",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "5500", "--directory", "C:\\Users\\Andrés\\Documents\\Arvo Surfing\\Pagina web"],
-      "port": 5500
+      "runtimeArgs": ["-m", "http.server", "5501", "--directory", "C:\\Users\\Andrés\\Documents\\Arvo Surfing\\Pagina web"],
+      "port": 5501
     }
   ]
 }

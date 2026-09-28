@@ -42,4 +42,23 @@ const io = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
+
+// Formulario de contacto: arma el mensaje y lo abre en WhatsApp
+// (el sitio es estático, no hay servidor que reciba el formulario)
+const form = document.getElementById("contact-form");
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const lines = [
+      `¡Hola Arvo! Soy ${data.get("nombre")}.`,
+      `Me interesa: ${data.get("interes")}.`,
+      `Nivel: ${data.get("nivel")}.`,
+      data.get("mensaje") && `\n${data.get("mensaje")}`,
+    ].filter(Boolean);
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
+    window.open(url, "_blank", "noopener");
+  });
+}
